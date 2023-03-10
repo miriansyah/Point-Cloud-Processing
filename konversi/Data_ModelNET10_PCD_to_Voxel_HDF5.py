@@ -117,7 +117,7 @@ X_train, y_train, X_test, y_test= read_hdf5("data_voxel_orientasi16.h5")
 
 X_train = np.array(X_train)
 X_train = X_train.reshape(X_train.shape[0], 64, 64, 64, 1)
-#print(X_train.shape)
+print(X_train.shape)
 
 #X_train = rgb_data_transform(X_train)
 # print(X_train[0])
