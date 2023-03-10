@@ -116,10 +116,10 @@ DATA_DIR = os.path.join("D:/Disertasi/Oprek/OPREK/", "ModelNetOrientasi_pcd/")
 X_train, y_train, X_test, y_test= read_hdf5("data_voxel_orientasi16.h5")
 
 X_train = np.array(X_train)
-# X_train = X_train.reshape(X_train.shape[0], 64, 64, 64, 1)
-print(X_train.shape)
+X_train = X_train.reshape(X_train.shape[0], 64, 64, 64, 1)
+#print(X_train.shape)
 
-# X_train = rgb_data_transform(X_train)
+#X_train = rgb_data_transform(X_train)
 # print(X_train[0])
 # X_train = X_train.reshape(X_train.shape[0], 16, 16, 16)
 # print(y_train[0])
